@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { getPhotoByName } from 'services/api';
 import Searchbar from './Searchbar';
 import ImageGallery from './ImageGallery';
