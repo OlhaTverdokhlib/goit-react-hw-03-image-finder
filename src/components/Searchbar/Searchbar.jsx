@@ -15,7 +15,7 @@ class Searchbar extends React.Component {
   };
 
   static propTypes = {
-    name: PropTypes.string.isRequired,
+    onSubmit: PropTypes.func.isRequired,
   };
 
   onChange = e => {
@@ -42,7 +42,11 @@ class Searchbar extends React.Component {
       <header className={searchbarStyles.searchbar}>
         <form className={searchbarStyles.searchForm} onSubmit={this.onSubmit}>
           <button type="submit" className={searchbarStyles.searchFormBtn}>
-            <img className={searchbarStyles.iconSearch} src={search} alt="icon" />
+            <img
+              className={searchbarStyles.iconSearch}
+              src={search}
+              alt="icon"
+            />
             <span className={searchbarStyles.searchFormBtnLabel}>Search</span>
           </button>
 
